@@ -1,0 +1,59 @@
+{
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "output_format": "ids",
+  "retrieval": {
+    "max_tables": 24,
+    "max_columns_per_table": 32,
+    "min_columns_per_table": 4,
+    "include_types": true,
+    "include_keys": true,
+    "include_join_neighbors": true,
+    "join_neighbor_limit": 4,
+    "always_include_table_columns_for_gold": true
+  },
+  "max_input_length": 6144,
+  "train_config": {
+    "run_name": "continue_best_wide_targeted_lr2e5_steps160",
+    "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "init_adapter": "adapter_seed_r64_current",
+    "output_format": "ids",
+    "retrieval": {
+      "max_tables": 24,
+      "max_columns_per_table": 32,
+      "min_columns_per_table": 4,
+      "include_types": true,
+      "include_keys": true,
+      "include_join_neighbors": true,
+      "join_neighbor_limit": 4,
+      "always_include_table_columns_for_gold": true
+    },
+    "max_seq_length": 4096,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "warmup_ratio": 0.03,
+    "lr_scheduler_type": "cosine",
+    "eval_strategy": "steps",
+    "logging_steps": 5,
+    "gradient_checkpointing": true,
+    "bf16": true,
+    "fp16": false,
+    "seed": 43,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "max_steps": 160,
+    "report_to": "none",
+    "max_input_length": 6144,
+    "balance_training": true,
+    "eval_steps": 40
+  }
+}

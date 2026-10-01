@@ -1,0 +1,19 @@
+# Schema-linking LoRA fine-tuning & inference
+# Python 3.10+ (the code uses PEP 604 "X | None" type hints)
+
+# Core: inference (main.py) and training (scripts/train_one_config.py)
+torch>=2.1
+transformers>=4.45
+peft>=0.13
+accelerate>=0.30        # required for device_map="auto"
+
+# Adapter weight download used by main.py on first run
+gdown
+requests
+
+# RapidFire AI multi-config SFT experiments (scripts/rapidfire_train_*.py)
+rapidfireai
+datasets
+
+# Optional: QLoRA (4-bit NF4) training via "qlora": true in a train config
+# bitsandbytes

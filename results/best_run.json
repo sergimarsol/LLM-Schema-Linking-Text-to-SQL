@@ -1,0 +1,15 @@
+{
+  "run_name": "schema_linking_qwen_lora8_run6",
+  "status": "ok",
+  "adapter_dir": "rf_experiments/schema_linking_qwen_lora8/runs/6/checkpoints/final_checkpoint",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "leaderboard_score": 0.4427,
+  "precision_t": 0.4983,
+  "recall_t": 0.4884,
+  "f1_t": 0.4828,
+  "table_score": 0.4899,
+  "precision_c": 0.3945,
+  "recall_c": 0.4072,
+  "f1_c": 0.385,
+  "column_score": 0.3955
+}

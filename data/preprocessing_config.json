@@ -1,0 +1,17 @@
+{
+  "schema_format": "text with table/column/type/key_info",
+  "include_types": true,
+  "include_keys": true,
+  "balancing_applied": true,
+  "balancing_strategy": "light oversampling (cap at 2x) for databases with < 10 examples",
+  "output_format": "chat-format JSONL with system/user/assistant roles + metadata",
+  "normalization": "alphabetically sorted tables and columns",
+  "metadata_fields": [
+    "source: 'original' or 'oversampled'",
+    "num_tables: count of tables in schema_links",
+    "num_columns: count of columns in schema_links",
+    "is_multitable: boolean",
+    "has_empty_columns: boolean",
+    "is_oversampled: boolean"
+  ]
+}
