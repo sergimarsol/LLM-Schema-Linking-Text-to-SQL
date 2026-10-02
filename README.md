@@ -183,14 +183,14 @@ PYTHONPATH=. python scripts/evaluate_experiment_grid.py --mode rapidfire \
 
 ## My contributions
 
-Developed as a course project for **UCSD CSE 234 (Data Systems for Machine Learning), Spring 2026**. My work focused on:
+My work focused on:
 
 - **Data engineering:** the preprocessing pipeline (`scripts/prepare_data.py`): schema serialization, gold-link validation, database-balanced oversampling and dataset statistics.
 - **Targeted augmentation:** difficulty-scored selection of training examples for augmentation (`scripts/select_examples_for_augmentation.py`).
 - **Fine-tuning improvements:** widened the LoRA target modules to all attention and MLP projections, and added hallucination filtering, validated parsing and post-processing of model outputs.
 - **Experimentation:** RapidFire AI SFT grid searches over Qwen2.5-0.5B and 1.5B configurations, and the inference entry point (`main.py`).
 
-Thanks to the CSE 234 course staff for the task, dataset and scorer (`eval.py`), and to the RapidFire AI and Qwen teams for their open-source tools and models.
+Developed at UC San Diego (CSE 234, Data Systems for Machine Learning, Spring 2026). Thanks to the course staff for the task, dataset and scorer (`eval.py`), and to the RapidFire AI and Qwen teams for their open-source tools and models.
 
 ## License
 

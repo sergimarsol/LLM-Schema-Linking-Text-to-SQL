@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Targeted RapidFire recovery/improvement grid for Project 2.
+"""Targeted RapidFire recovery/improvement grid for schema linking.
 
 This script is intentionally separate from rapidfire_train_8.py. The first grid
 establishes the required broad experiment sweep. This follow-up grid spends time

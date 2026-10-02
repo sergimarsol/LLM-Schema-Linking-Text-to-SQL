@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared schema-linking utilities for CSE/DSC 234 Project 2.
+"""Shared schema-linking utilities.
 
 This module is intentionally dependency-light.  It is used by training,
 RapidFire data formatting, and final inference so that the prompt seen during

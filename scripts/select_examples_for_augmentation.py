@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Select high-value Project 2 examples for manual/LLM paraphrase augmentation.
+Select high-value training examples for manual/LLM paraphrase augmentation.
 
 Input:
   train.json

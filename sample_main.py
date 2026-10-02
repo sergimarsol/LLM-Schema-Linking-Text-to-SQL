@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Final inference entrypoint for CSE/DSC 234 Project 2.
+"""Final inference entrypoint for LLM schema linking.
 
 Required grader contract:
     python3 main.py --input input_filename --output output_filename
@@ -264,7 +264,7 @@ def predict_one(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Schema linking inference — CSE/DSC 234 Project 2"
+        description="LLM schema linking inference (LoRA-tuned Qwen2.5)"
     )
     parser.add_argument("--input",           required=True,
                         help="Input JSON (list of {question_id, db_id, question})")
